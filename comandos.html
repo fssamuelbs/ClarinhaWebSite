@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="index.css">
+  <title>Comandos</title>
+  <meta name="keywords" content="Discord, Bot, Moderação, Diversão, Economia, cassino">
+  <meta name="og:title" content="Clarinha Bot - Discord">
+  <meta name="og:description" content="Clarinha é um bot de Apostas, Diversão e Economia, com vários comandos únicos de apostas para você deixar seus membros entretidos.">
+  <meta name="og:image" content="https://i.postimg.cc/jdPqPJVs/481-Sem-Titulo-20230911133402-2.png">
+  <meta name="theme-color" content="#00FFFF">
+  <link rel="icon" type="image/png" href="/img/clarinha_pipoca.png">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8556296178790983"
+     crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <header id="header">
+    <a id="logo" href="index.html">
+      <h1>Clarinha</h1>
+    </a>
+  
+  <nav id="nav">
+
+    <ul id="menu">
+      <li><a id="botaopremium" href="comandos.html"><i class="fa-solid fa-terminal" style="color: #ffffff;"></i> Comandos</a></li>
+      <li><a id="botaopremium" href="daily.html"><i class="fa fa-gift" aria-hidden="true"></i> Daily</a></li>
+      <li><a id="botaopremium" href="vips.html"><i class="fa fa-star" aria-hidden="true"></i> Premium</a></li>
+
+    </ul>
+    <button id="nome_avatar_mobile"><img src="./img/avatar.jpg" height="40px" alt="" id="avatar"> Guilherme</button>
+    <button id="botao_menu"><img src="./img/menu_abrir.png" alt="menu" height="30px"></button>
+  </nav>
+</header>
+
+  <div id="principal_cmd">
+    <h1 class="cmd_titulo">Comandos (38)<br></h1>
+    <h2 class="economianome"><span id="economia">Economia (16)</span></h2>
+    <div class="caixa_cmd">
+
+  
+      <details class="cmd_details">
+        <summary class="cmd_summary">
+          <h2 class="cmd">atm</h2>
+          <h6>Consulte seu saldo Candys e de outros usuários.</h6>
+        </summary>
+        <div class="info_cmd">
+          <h2>Tempo de intervalo</h2>
+          <p>10 Segundos</p>
+          <h2>Sintaxe - <i class="fa-regular fa-keyboard" style="color: #ffffff;"></i></h2>
+          <p>cl.atm </p>
+          <h2>Sintaxe - <span id="slash">{/}</span></h2>
+          <p>/candy-atm</p>
+          <h2>Sinônimos</h2>
+          <p>atm, saldo, candys</p>
+        </div>
+      </details>
+
+      <details class="cmd_details">
+        <summary class="cmd_summary">
+          <h2 class="cmd">alugar</h2>
+          <h6>Após comprar uma casa na /loja alugue sua casa.</h6>
+        </summary>
+        <div class="info_cmd">
+          <h2>Tempo de intervalo</h2>
+          <p>25 minutos</p>
+          <h2>Sintaxe - <i class="fa-regular fa-keyboard" style="color: #ffffff;"></i></h2>
+          <p>cl.alugar</p>
+          <h2>Sintaxe - <span id="slash">{/}</span></h2>
+          <p>/casa-alugar</p>
+          <h2>Requisito</h2>
+          <p>Comprar uma casa na /loja.</p>
+        </div>
+      </details>
+
+      <details class="cmd_details">
+        <summary class="cmd_summary">
+          <h2 class="cmd">crime</h2>
+          <h6> Faça uma ação criminal e ganhe ou perca Candys.</h6>
+        </summary>
+        <div class="info_cmd">
+          <h2>Tempo de intervalo</h2>
+          <p>60 minutos</p>
+          <h2>Sintaxe - <i class="fa-regular fa-keyboard" style="color: #ffffff;"></i></h2>
+          <p>cl.crime</p>
+          <h2>Sintaxe - <span id="slash">{/}</span></h2>
+          <p>/crime</p>
+        </div>
+      </details>
+
+      <details class="cmd_details">
+        <summary class="cmd_summary">
+          <h2 class="cmd">coletar</h2>
+          <h6>Faça uma coleta de Candys.</h6>
+        </summary>
+        <div class="info_cmd">
+          <h2>Tempo de intervalo</h2>
+          <p>20 minutos</p>
+          <h2>Sintaxe - <i class="fa-regular fa-keyboard" style="color: #ffffff;"></i></h2>
+          <p>cl.fcoletar</p>
+          <h2>Sintaxe - <span id="slash">{/}</span></h2>
+          <p>/coletar-premium</p>
+          <h2>Requisito</h2>
+          <p>Exclusivo para membros premium.</p>
+        </div>
+      </details>
+
+
+      <details class="cmd_details">
+        <summary class="cmd_summary">
+          <h2 class="cmd">daily</h2>
+          <h6>Resgate seu bônus diário de Candys.</h6>
+        </summary>
+        <div class="info_cmd">
+          <h2>Tempo de intervalo</h2>
+          <p>24 horas</p>
+          <h2>Sintaxe - <i class="fa-regular fa-keyboard" style="color: #ffffff;"></i></h2>
+          <p>cl.daily</p>
+          <h2>Sintaxe - <span id="slash">{/}</span></h2>
+          <p>/daily</p>
+          <h2>Sinônimos</h2>
+          <p>bônus, diário, recompensa</p>
+        </div>
+      </details>
+
+      <details class="cmd_details">
+        <summary class="cmd_summary">
+          <h2 class="cmd">daily-premium</h2>
+          <h6>Assinantes premium podem resgatar o bônus diário duas vezes.</h6>
+        </summary>
+        <div class="info_cmd">
+          <h2>Tempo de intervalo</h2>
+          <p>24 horas</p>
+          <h2>Sintaxe - <i class="fa-regular fa-keyboard" style="color: #ffffff;"></i></h2>
+          <p>cl.dp</p>
+          <h2>Sintaxe - <span id="slash">{/}</span></h2>
+          <p>/daily-premium</p>
+          <h2>Sinônimos</h2>
+          <p>bônus premium, diário premium, recompensa premium</p>
+        </div>
+      </details>
+
+      <details class="cmd_details">
+        <summary class="cmd_summary">
+          <h2 class="cmd">fazenda comprar</h2>
+          <h6>Compre uma fazenda e libere novos recursos.</h6>
+        </summary>
+        <div class="info_cmd">
+          <h2>Limites</h2>
+          <p>1/1 Fazenda por usuário.</p>
+          <h2>Sintaxe - <i class="fa-regular fa-keyboard" style="color: #ffffff;"></i></h2>
+          <p>cl.fazenda comprar</p>
+          <h2>Sintaxe - <span id="slash">{/}</span></h2>
+          <p>/fazenda-comprar</p>
+          <h2>Comandos Integrados</h2>
+          <p>fazenda-plantar, /fazenda-converter, /fazenda-sementes</p>
+        </div>
+      </details>
+
+      <details class="cmd_details">
+        <summary class="cmd_summary">
+          <h2 class="cmd">fazenda converter</h2>
+          <h6>Faça a conversão de suas sementes para Candys.</h6>
+        </summary>
+        <div class="info_cmd">
+          <h2>Sintaxe - <i class="fa-regular fa-keyboard" style="color: #ffffff;"></i></h2>
+          <p>cl.converter</p>
+          <h2>Sintaxe - <span id="slash">{/}</span></h2>
+          <p>/fazenda-converter/p>
+          <h2>Requisito</h2>
+          <p>Ter uma fazenda na mochila.</p>
+        </div>
+      </details>
+
+      <details class="cmd_details">
+        <summary class="cmd_summary">
+          <h2 class="cmd">fazenda plantar</h2>
+          <h6> Faça uma Plantação em sua fazenda.</h6>
+        </summary>
+        <div class="info_cmd">
+          <h2>Tempo de intervalo</h2>
+          <p>60 minutos</p>
+          <h2>Sintaxe - <i class="fa-regular fa-keyboard" style="color: #ffffff;"></i></h2>
+          <p>cl.plantar</p>
+          <h2>Sintaxe - <span id="slash">{/}</span></h2>
+          <p>/fazenda-plantar</p>
+          <h2>Requisito</h2>
+          <p>Ter uma fazenda na mochila.</p>
+        </div>
+      </details>
+
+      <details class="cmd_details">
+        <summary class="cmd_summary">
+          <h2 class="cmd">fazenda sementes</h2>
+          <h6>Consulte suas sementes atuais.</h6>
+        </summary>
+        <div class="info_cmd">
+          <h2>Tempo de intervalo</h2>
+          <p>10 Segundos</p>
+          <h2>Sintaxe - <i class="fa-regular fa-keyboard" style="color: #ffffff;"></i></h2>
+          <p>cl.sementes</p>
+          <h2>Sintaxe - <span id="slash">{/}</span></h2>
+          <p>/fazenda-sementes</p>
+          <h2>Requisito</h2>
+          <p>Ter uma fazenda na mochila.</p>
+        </div>
+      </details>
+
+      <details class="cmd_details">
+        <summary class="cmd_summary">
+          <h2 class="cmd">ifood entregas</h2>
+          <h6>Selecione uma entrega e ganhe Candys ao finalizá-la.</h6>
+        </summary>
+        <div class="info_cmd">
+          <h2>Tempo de intervalo</h2>
+          <p>Vária dependendo da entrega.</p>
+          <h2>Sintaxe - <i class="fa-regular fa-keyboard" style="color: #ffffff;"></i></h2>
+          <p>cl.entregas</p>
+          <h2>Sintaxe - <span id="slash">{/}</span></h2>
+          <p>/ifood-entregas</p>
+        </div>
+      </details>
+
+      <details class="cmd_details">
+        <summary class="cmd_summary">
+          <h2 class="cmd">pagar</h2>
+          <h6>Envie Candys para outro usuário.</h6>
+        </summary>
+        <div class="info_cmd">
+          <h2>Tempo de intervalo</h2>
+          <p>10 Segundos</p>
+          <h2>Sintaxe - <i class="fa-regular fa-keyboard" style="color: #ffffff;"></i></h2>
+          <p>cl.pagar @fssamuelbs 1000</p>
+          <h2>Sintaxe - <span id="slash">{/}</span></h2>
+          <p>/pagar</p>
+          <h2>Sinônimos</h2>
+          <p>pay</p>
+        </div>
+      </details>
+
+      <details class="cmd_details">
+        <summary class="cmd_summary">
+          <h2 class="cmd">programar</h2>
+          <h6>Após comprar um pc na /loja programe um bot e receba Candys.</h6>
+        </summary>
+        <div class="info_cmd">
+          <h2>Tempo de intervalo</h2>
+          <p>30 Minutos</p>
+          <h2>Sintaxe - <i class="fa-regular fa-keyboard" style="color: #ffffff;"></i></h2>
+          <p>cl.programar</p>
+          <h2>Sintaxe - <span id="slash">{/}</span></h2>
+          <p>pc-programar</p>
+          <h2>Requisito</h2>
+          <p>Comprar um PC na /loja.</p>
+        </div>
+      </details>
+
+      <details class="cmd_details">
+        <summary class="cmd_summary">
+          <h2 class="cmd">alimentos</h2>
+          <h6>Após comprar um supermercado use ele comando para receber Candys.</h6>
+        </summary>
+        <div class="info_cmd">
+          <h2>Tempo de intervalo</h2>
+          <p> 18 minutos</p>
+          <h2>Sintaxe - <i class="fa-regular fa-keyboard" style="color: #ffffff;"></i></h2>
+          <p>cl.alimentos</p>
+          <h2>Sintaxe - <span id="slash">{/}</span></h2>
+          <p>/supermercado-alimentos</p>
+          <h2>Requisito</h2>
+          <p>Comprar um Supermercado na /loja.</p>
+        </div>
+      </details>
+
+      <details class="cmd_details">
+        <summary class="cmd_summary">
+          <h2 class="cmd">arar</h2>
+          <h6>Para uma boa plantação, é preciso arar as terras antes.</h6>
+        </summary>
+        <div class="info_cmd">
+          <h2>Tempo de intervalo</h2>
+          <p>22 minutos</p>
+          <h2>Sintaxe - <i class="fa-regular fa-keyboard" style="color: #ffffff;"></i></h2>
+          <p>cl.arar</p>
+          <h2>Sintaxe - <span id="slash">{/}</span></h2>
+          <p>/trator-arar</p>
+          <h2>Sinônimos</h2>
+          <p>Comprar um Trator da /loja.</p>
+        </div>
+      </details>
+
+      <details class="cmd_details">
+        <summary class="cmd_summary">
+          <h2 class="cmd">vote</h2>
+          <h6>Você gosta de mim? então vote em mim no <strong>TOP.GG</strong> e receba Candys!</h6>
+        </summary>
+        <div class="info_cmd">
+          <h2>Tempo de intervalo</h2>
+          <p>Vote a cada 12 horas</p>
+          <h2>Sintaxe - <i class="fa-regular fa-keyboard" style="color: #ffffff;"></i></h2>
+          <p>cl.vote</p>
+          <h2>Sintaxe - <span id="slash">{/}</span></h2>
+          <p>/vote</p>
+
+        </div>
+      </details>
+    </div>
+
+    <h1 class="cmd_titulo"><br><span id="apostas">Apostas (12)</span></h1>
+
+    <div class="caixa_cmd">
+
+  
+      <details class="cmd_details">
+        <summary class="cmd_summary">
+          <h2 class="cmd">apostar</h2>
+          <h6>Aposte suas Candys com outro usuário.</h6>
+        </summary>
+        <div class="info_cmd">
+          <h2>Sintaxe - <i class="fa-regular fa-keyboard" style="color: #ffffff;"></i></h2>
+          <p>cl.apostar @fssamuelbs 100</p>
+          <h2>Sintaxe - <span id="slash">{/}</span></h2>
+          <p>/apostar @user 100</p>
+       
+        </div>
+      </details>
+      <details class="cmd_details">
+        <summary class="cmd_summary">
+          <h2 class="cmd">alvo</h2>
+          <h6> Aposte suas Candys no Flexa VS Alvo e boa sorte!</h6>
+        </summary>
+        <div class="info_cmd">
+          <h2>Sintaxe - <i class="fa-regular fa-keyboard" style="color: #ffffff;"></i></h2>
+          <p>cl.alvo 100</p>
+          <h2>Sintaxe - <span id="slash">{/}</span></h2>
+          <p>/alvo 100 </p>
+       
+        </div>
+      </details>
+
+      <details class="cmd_details">
+        <summary class="cmd_summary">
+          <h2 class="cmd">crash</h2>
+          <h6>Aposte seus Candys no Famoso jogo do foguetinho e boa sorte!</h6>
+        </summary>
+        <div class="info_cmd">
+          <h2>Sintaxe - <i class="fa-regular fa-keyboard" style="color: #ffffff;"></i></h2>
+          <p>cl.crash 100</p>
+          <h2>Sintaxe - <span id="slash">{/}</span></h2>
+          <p>/crash 100</p>
+       
+        </div>
+      </details>
+    </details>
+    <details class="cmd_details">
+      <summary class="cmd_summary">
+        <h2 class="cmd">corrida</h2>
+        <h6>Aposte doces em um carro na Corrida de Carros e ganhe um prêmio especial!</h6>
+      </summary>
+      <div class="info_cmd">
+        <h2>Sintaxe - <i class="fa-regular fa-keyboard" style="color: #ffffff;"></i></h2>
+        <p>cl.corrida 100</p>
+        <h2>Sintaxe - <span id="slash">{/}</span></h2>
+        <p>/corrida 100</p>
+     
+      </div>
+    </details>
+
+      <details class="cmd_details">
+        <summary class="cmd_summary">
+          <h2 class="cmd">double</h2>
+          <h6> Escolha uma cor, aposte suas Candys e teste sua sorte!</h6>
+        </summary>
+        <div class="info_cmd">
+          <h2>Sintaxe - <i class="fa-regular fa-keyboard" style="color: #ffffff;"></i></h2>
+          <p>cl.double 100</p>
+          <h2>Sintaxe - <span id="slash">{/}</span></h2>
+          <p>/double 100</p>
+       
+        </div>
+      </details>
+
+      <details class="cmd_details">
+        <summary class="cmd_summary">
+          <h2 class="cmd">dice</h2>
+          <h6> Aposte suas Candys no dice e teste sua sorte!</h6>
+        </summary>
+        <div class="info_cmd">
+          <h2>Sintaxe - <i class="fa-regular fa-keyboard" style="color: #ffffff;"></i></h2>
+          <p>cl.dice 100</p>
+          <h2>Sintaxe - <span id="slash">{/}</span></h2>
+          <p>/dice 100</p>
+       
+        </div>
+      </details>
+
+      <details class="cmd_details">
+        <summary class="cmd_summary">
+          <h2 class="cmd">dice premium</h2>
+          <h6> Aposte suas Candys no dice e teste sua sorte! (Para premium.)</h6>
+        </summary>
+        <div class="info_cmd">
+          <h2>Sintaxe - <span id="slash">{/}</span></h2>
+          <p>/dice-premium 100</p>
+       
+        </div>
+      </details>
+
+      <details class="cmd_details">
+        <summary class="cmd_summary">
+          <h2 class="cmd">rifa</h2>
+          <h6>Veja os dados da rifa atual.</h6>
+        </summary>
+        <div class="info_cmd">
+          <h2>Sintaxe - <i class="fa-regular fa-keyboard" style="color: #ffffff;"></i></h2>
+          <p>cl.rifa</p>
+          <h2>Sintaxe - <span id="slash">{/}</span></h2>
+          <p>/rifa-status</p>
+       
+        </div>
+      </details>
+
+      <details class="cmd_details">
+        <summary class="cmd_summary">
+          <h2 class="cmd">ticket comprar</h2>
+          <h6>Compre um ticket e teste sua sorte com a Clarifa.</h6>
+        </summary>
+        <div class="info_cmd">
+          <h2>Sintaxe - <i class="fa-regular fa-keyboard" style="color: #ffffff;"></i></h2>
+          <p>cl.ticket comprar</p>
+          <h2>Sintaxe - <span id="slash">{/}</span></h2>
+          <p>/rifa-comprar</p>
+       
+        </div>
+      </details>
+      <details class="cmd_details">
+        <summary class="cmd_summary">
+          <h2 class="cmd">tigrinho</h2>
+          <h6>Aposte suas candys no famoso jogo do tigrinho.</h6>
+        </summary>
+        <div class="info_cmd">
+          <h2>Sintaxe - <i class="fa-regular fa-keyboard" style="color: #ffffff;"></i></h2>
+          <p>cl.tigrinho 100</p>
+          <h2>Sintaxe - <span id="slash">{/}</span></h2>
+          <p>/tigrinho 100 </p>
+       
+        </div>
+      </details>
+      <details class="cmd_details">
+        <summary class="cmd_summary">
+          <h2 class="cmd">roleta</h2>
+          <h6>Aposte suas Candys na roleta e teste sua sorte.</h6>
+        </summary>
+        <div class="info_cmd">
+          <h2>Sintaxe - <i class="fa-regular fa-keyboard" style="color: #ffffff;"></i></h2>
+          <p>cl.roleta 100</p>
+          <h2>Sintaxe - <span id="slash">{/}</span></h2>
+          <p>/roleta </p>
+       
+        </div>
+      </details>
+      <details class="cmd_details">
+        <summary class="cmd_summary">
+          <h2 class="cmd">natal</h2>
+          <h6>Encontre o Papai noel e ganhe um prêmio especial!</h6>
+        </summary>
+        <div class="info_cmd">
+          <h2>Sintaxe - <i class="fa-regular fa-keyboard" style="color: #ffffff;"></i></h2>
+          <p>cl.natal</p>
+          <h2>Sintaxe - <span id="slash">{/}</span></h2>
+          <p>/natal</p>
+       
+        </div>
+
+    
+
+
+    
+    </div>
+    <h1 class="cmd_titulo"><br><span id="utilidades">Utilidades (10)</span></h1>
+
+    <div class="caixa_cmd">
+
+  
+      <details class="cmd_details">
+        <summary class="cmd_summary">
+          <h2 class="cmd">aliança comprar</h2>
+          <h6>Compre uma aliança e peça seu amor em Casamento.</h6>
+        </summary>
+        <div class="info_cmd">
+          <h2>Sintaxe - <i class="fa-regular fa-keyboard" style="color: #ffffff;"></i></h2>
+          <p>cl.aliança comprar </p>
+          <h2>Sintaxe - <span id="slash">{/}</span></h2>
+          <p>/aliança-comprar</p>
+       
+        </div>
+      </details>
+      <details class="cmd_details">
+        <summary class="cmd_summary">
+          <h2 class="cmd">casar</h2>
+          <h6>Peça seu amor em Casamento.</h6>
+        </summary>
+        <div class="info_cmd">
+          <h2>Sintaxe - <i class="fa-regular fa-keyboard" style="color: #ffffff;"></i></h2>
+          <p>cl.casar @user</p>
+          <h2>Sintaxe - <span id="slash">{/}</span></h2>
+          <p>/aliança-casar</p>
+        </div>
+      </details>
+
+      <details class="cmd_details">
+        <summary class="cmd_summary">
+          <h2 class="cmd">divorciar </h2>
+          <h6> Finalize seu relacionamento atual.</h6>
+        </summary>
+        <div class="info_cmd">
+          <h2>Sintaxe - <i class="fa-regular fa-keyboard" style="color: #ffffff;"></i></h2>
+          <p>cl.divorciar @user </p>
+          <h2>Sintaxe - <span id="slash">{/}</span></h2>
+          <p>/aliança-divorciar</p>
+        </div>
+      </details>
+
+      <details class="cmd_details">
+        <summary class="cmd_summary">
+          <h2 class="cmd">background </h2>
+          <h6>Utilize para alterar seu background do /perfil.</h6>
+        </summary>
+        <div class="info_cmd">
+          <h2>Sintaxe - <i class="fa-regular fa-keyboard" style="color: #ffffff;"></i></h2>
+          <p>Não há para prefixo </p>
+          <h2>Sintaxe - <span id="slash">{/}</span></h2>
+          <p>/background</p>
+        </div>
+      </details>
+
+      <details class="cmd_details">
+        <summary class="cmd_summary">
+          <h2 class="cmd">convites </h2>
+          <h6>Veja o convite para o Servidor da Clarinha e para adicioná-la em seu Servidor.</h6>
+        </summary>
+        <div class="info_cmd">
+          <h2>Sintaxe - <i class="fa-regular fa-keyboard" style="color: #ffffff;"></i></h2>
+          <p>cl.convites</p>
+          <h2>Sintaxe - <span id="slash">{/}</span></h2>
+          <p>/convites</p>
+        </div>
+      </details>
+
+      <details class="cmd_details">
+        <summary class="cmd_summary">
+          <h2 class="cmd">cooldown lista </h2>
+          <h6>Veja sua lista de intervalos.</h6>
+        </summary>
+        <div class="info_cmd">
+          <h2>Sintaxe - <i class="fa-regular fa-keyboard" style="color: #ffffff;"></i></h2>
+          <p>cl.cooldown</p>
+          <h2>Sintaxe - <span id="slash">{/}</span></h2>
+          <p>/cooldown-lista</p>
+          <h2>Sinônimos</h2>
+          <p>cl.cd</p>
+        </div>
+      </details>
+      
+      <details class="cmd_details">
+        <summary class="cmd_summary">
+          <h2 class="cmd">perfil</h2>
+          <h6>Veja seu perfil e de outros usuários.</h6>
+        </summary>
+        <div class="info_cmd">
+          <h2>Sintaxe - <i class="fa-regular fa-keyboard" style="color: #ffffff;"></i></h2>
+          <p>cl.perfil</p>
+          <h2>Sintaxe - <span id="slash">{/}</span></h2>
+          <p>/perfil</p>
+          <h2>Sinônimos</h2>
+          <p>cl.profile</p>
+        </div>
+      </details>
+
+      <details class="cmd_details">
+        <summary class="cmd_summary">
+          <h2 class="cmd">ping</h2>
+          <h6>Veja o ping atual da Clarinha.</h6>
+        </summary>
+        <div class="info_cmd">
+          <h2>Sintaxe - <i class="fa-regular fa-keyboard" style="color: #ffffff;"></i></h2>
+          <p>cl.ping</p>
+          <h2>Sintaxe - <span id="slash">{/}</span></h2>
+          <p>/ping</p>
+        </div>
+      </details>
+
+      <details class="cmd_details">
+        <summary class="cmd_summary">
+          <h2 class="cmd">registrar</h2>
+          <h6>Para começar a usar meus comandos você deve ser registrar.</h6>
+        </summary>
+        <div class="info_cmd">
+          <h2>Sintaxe - <i class="fa-regular fa-keyboard" style="color: #ffffff;"></i></h2>
+          <p>cl.registrar</p>
+          <h2>Sintaxe - <span id="slash">{/}</span></h2>
+          <p>/registrar</p>
+        </div>
+      </details>
+
+      <details class="cmd_details">
+        <summary class="cmd_summary">
+          <h2 class="cmd">sobre mim</h2>
+          <h6>Altere seu sobre mim do /perfil.</h6>
+        </summary>
+        <div class="info_cmd">
+          <h2>Sintaxe - <i class="fa-regular fa-keyboard" style="color: #ffffff;"></i></h2>
+          <p>cl.sobremium</p>
+          <h2>Sintaxe - <span id="slash">{/}</span></h2>
+          <p>/sobremim</p>
+        </div>
+      </details>
+
+
+
+   </div>
+
+
+
+   <div class="abrirespaco">
+    
+   </div>
+
+
+ </div>
+        </div>
+<div class="footer">
+<div class="footerrodape">
+   <ul class="nomi">
+       <li><a href="./index.html" class="kdcmx">Home</a></li>
+       <li><a href="./termos.html" class="kdcmx">Termos de Serviço e Privacidade</a></li>
+       <li><a href="https://discord.gg/pu725H4DXa" class="kdcmx"> Suporte</a></li>
+       <li><a href="./comandos.html" class="kdcmx">Comandos</a></li>
+       <li><a href="./daily.html" class="kdcmx">Daily</a></li>
+       <li><a href="./vips.html" class="kdcmx">Premium</a></li>
+   </ul>
+
+   <style>
+   .kdcmx {
+   color: white;
+   text-decoration: none;
+   }
+
+
+</style>
+<div class="social-media">
+ <p>Redes Sociais</p>
+
+</div>
+
+<div class="social-media">
+ 
+ <a href="https://discord.gg/pu725H4DXa"><img class="small-image" src="./img/discordicon (1).png" alt="Discord"></a>
+ <a href="https://instagram/perfil/clarinhadiscordbot"><img class="small-image" src="./img/instaicon.png" alt="Instagram"></a>
+ <a href="https://github/perfil/clarinhadiscordbot"><img class="small-image" src="./img/githubicon.png" alt="Github"></a>
+ 
+</div>
+<div class="discloudlogocss">
+ <a href="https://discloud.app"> <img class="discloudlogo" src="./img/discloudlogo.png" alt="discloud"></a>
+
+</div>
+<div class="direitosautorais">
+ © Clarinha - 2022-2024 / Todos os Direitos Reservados
+</div>
+
+</div>
+
+  <script defer src="main.js"></script>
+</body>
+
+</html>
